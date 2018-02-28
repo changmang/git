@@ -1,0 +1,73 @@
+
+CHAITRA ANANTH@DESKTOP-HKPHPIP MINGW64 ~/eclipse-workspace1/git
+$ git config --global user.name "changmang"
+
+CHAITRA ANANTH@DESKTOP-HKPHPIP MINGW64 ~/eclipse-workspace1/git
+$ git config --global user.email "changmang@gmail.com"
+
+CHAITRA ANANTH@DESKTOP-HKPHPIP MINGW64 ~/eclipse-workspace1/git
+$ git init
+Initialized empty Git repository in C:/Users/CHAITRA ANANTH/eclipse-workspace1/g                                                                                                                it/.git/
+
+CHAITRA ANANTH@DESKTOP-HKPHPIP MINGW64 ~/eclipse-workspace1/git (master)
+$ git add .
+
+CHAITRA ANANTH@DESKTOP-HKPHPIP MINGW64 ~/eclipse-workspace1/git (master)
+$ git remote add origin https://github.com/changmang/git.git
+
+CHAITRA ANANTH@DESKTOP-HKPHPIP MINGW64 ~/eclipse-workspace1/git (master)
+$ git commit -m "first comment"
+[master (root-commit) 96361d8] first comment
+ 5 files changed, 39 insertions(+)
+ create mode 100644 .classpath
+ create mode 100644 .project
+ create mode 100644 .settings/org.eclipse.jdt.core.prefs
+ create mode 100644 bin/git/git.class
+ create mode 100644 src/git/git.java
+
+CHAITRA ANANTH@DESKTOP-HKPHPIP MINGW64 ~/eclipse-workspace1/git (master)
+$ git push -u origin master
+Counting objects: 12, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (12/12), 1.34 KiB | 275.00 KiB/s, done.
+Total 12 (delta 0), reused 0 (delta 0)
+To https://github.com/changmang/git.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+CHAITRA ANANTH@DESKTOP-HKPHPIP MINGW64 ~/eclipse-workspace1/git (master)
+$ git add .
+
+CHAITRA ANANTH@DESKTOP-HKPHPIP MINGW64 ~/eclipse-workspace1/git (master)
+$ git commit -m "2nd commit"
+[master 7d4ab17] 2nd commit
+ 2 files changed, 5 insertions(+)
+ create mode 100644 bin/git/git1.class
+ create mode 100644 src/git/git1.java
+
+CHAITRA ANANTH@DESKTOP-HKPHPIP MINGW64 ~/eclipse-workspace1/git (master)
+$ git push -u origin master
+Counting objects: 8, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (8/8), 730 bytes | 104.00 KiB/s, done.
+Total 8 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/changmang/git.git
+   96361d8..7d4ab17  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+CHAITRA ANANTH@DESKTOP-HKPHPIP MINGW64 ~/eclipse-workspace1/git (master)
+$ git pull origin
+remote: Counting objects: 5, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (5/5), done.
+From https://github.com/changmang/git
+   7d4ab17..7cf12a9  master     -> origin/master
+Updating 7d4ab17..7cf12a9
+Fast-forward
+ src/git/git.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 src/git/git.txt
